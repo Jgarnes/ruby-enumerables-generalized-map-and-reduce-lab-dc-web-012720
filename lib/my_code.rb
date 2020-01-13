@@ -13,11 +13,11 @@ def reduce(source_array, starting_point = 0)
     sum = starting_point
     i = 0 
   else 
-    sum = array[0]
+    sum = source_array[0]
     i = 1 
 end 
-while i < array.length do 
-  sum = yield(sum, array[i])
+while i < source_array.length do 
+  sum = yield(sum, source_array[i])
   i += 1 
 end 
 sum 
